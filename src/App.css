@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* styles.css */
+body {
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9fc;
+  color: #fdfcfc;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  height: 90%;
+  width: 600px;
+  max-width: 400px;
+  max-height: 800px;
+  margin-top: 0 auto;
+  padding: 20px;
+  padding-top: 0px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  padding-top: 15px;
+  color: rgb(247, 81, 108);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  background-color: #5b0e5e;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar h4 {
+  font-size: 18px;
+  color: #f8f5f5;
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.summary {
+  height: 120px;
+  background-image: linear-gradient(180deg, #5b0e5e, rgb(247, 81, 108));
+  color: #fff;
+  padding: 15px;
+  padding-top: 9px !important;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.summary h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+.buttons {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  background-color: #96189b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons button:hover {
+  background-color: #5b0e5e;
+}
+
+.details {
+  background-color: #080000;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.details.open {
+  max-height: 500px; /* Adjust based on content */
+}
+
+.details h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.details li:last-child {
+  border-bottom: none;
+}
+
+#expenseform {
+  color: #000;
+  height: 220px;
+  background-color: #ece2e4;
+  padding: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#expenseform h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#incomeform {
+  color: #000;
+  height: 120px;
+  background-color: #ece2e4;
+  padding: 15px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#incomeform h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.forms input,
+.forms select,
+.nameForm input {
+  justify-self: center;
+  height: 40px;
+  width: 80%;
+  border-color: rgb(231, 20, 56);
+  padding: 0px;
+  margin: 2px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.forms button,
+.nameForm button {
+  background-color: #96189b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.forms button:hover,
+.nameForm button:hover {
+  background-color: #5b0e5e;
 }
